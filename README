@@ -1,9 +1,17 @@
-Put this in your ~/.bash_profile
+Run this in Mac
 
 ```
-source /Users/jiashenb/remoteEc2Scripts/client-side-functions
+chmod +x build-client.sh
+./build-client.sh
+source ~/.bash_profile
 ```
 
+Run this in RHEL
+
+```
+chmod +x build-remote.sh
+./build-remote.sh
+```
 
 To SSH from mac to RHEL
 

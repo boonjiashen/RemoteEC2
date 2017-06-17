@@ -2,7 +2,7 @@ function echo_run() {
     echo "$@" ; "$@" ;
 }
 
-RHEL_REMOTE_HOST="ec2-54-202-122-98.us-west-2.compute.amazonaws.com"
+RHEL_REMOTE_HOST="ec2-54-244-214-10.us-west-2.compute.amazonaws.com"
 AL_REMOTE_HOST="ec2-34-211-149-84.us-west-2.compute.amazonaws.com"
 AL_PEM="/Users/jiashenb/Downloads/jiashenbMicroRhel.pem"
 RHEL_PEM=$AL_PEM
