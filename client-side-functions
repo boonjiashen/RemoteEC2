@@ -1,0 +1,30 @@
+function echo_run() {
+    echo "$@" ; "$@" ;
+}
+
+RHEL_REMOTE_HOST="ec2-34-211-28-109.us-west-2.compute.amazonaws.com"
+AL_REMOTE_HOST="ec2-34-211-149-84.us-west-2.compute.amazonaws.com"
+AL_PEM="/Users/jiashenb/Downloads/jiashenbMicroRhel.pem"
+RHEL_PEM=$AL_PEM
+REMOTE_USER="ec2-user"
+
+function tunnel() {
+       target=$1
+       tunnel_host=$2
+       PEM=$AL_PEM
+       USER=$REMOTE_USER
+       # kill pre-existing tunnel
+       for pid in `ps -ef | grep $target | grep -v grep |awk '{print $2}'` ; do
+               echo_run kill $pid
+       done
+       sleep 1
+       echo_run ssh -i $PEM -2 -N -f -L $target $USER@$tunnel_host
+}
+
+function myVnctunnel(){
+       host=$1
+       for x in 0 1 2 3 4; do
+               # forward port 590x to 591x, to avoid conflict with local vnc servers
+               tunnel 591$x:$host:590$x $host
+       done
+}
