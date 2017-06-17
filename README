@@ -1,0 +1,12 @@
+Put this in your ~/.bash_profile
+
+```
+source /Users/jiashenb/remoteEc2Scripts/client-side-functions
+```
+
+
+To SSH from mac to RHEL
+
+```
+ssh -i $RHEL_PEM $REMOTE_USER@$RHEL_REMOTE_HOST
+```
