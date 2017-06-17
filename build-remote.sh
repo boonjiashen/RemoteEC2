@@ -16,7 +16,7 @@ myVncserver
 echo "exec gnome-session &" >> $HOME/.vnc/xstartup
 
 # Set VNC connection settings
-cat >/etc/sysconfig/vncservers <<EOL
+sudo bash -c "cat >> /etc/sysconfig/vncservers" << EOL
 VNCSERVERS="1:ec2-user"
 VNCSERVERARGS[1]="-geometry 1024x768"
 EOL
