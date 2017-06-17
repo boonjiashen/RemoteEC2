@@ -1,7 +1,6 @@
 Run this in Mac
 
 ```
-chmod +x build-client.sh
 ./build-client.sh
 source ~/.bash_profile
 ```
@@ -9,7 +8,9 @@ source ~/.bash_profile
 Run this in RHEL
 
 ```
-chmod +x build-remote.sh
+sudo yum install git
+git clone http://github.com/boonjiashen/remoteEc2
+cd remoteEc2
 ./build-remote.sh
 ```
 
