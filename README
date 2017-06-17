@@ -3,14 +3,17 @@ Run this in Mac
 ```
 ./build-client.sh
 source ~/.bash_profile
+myVnctunnel $RHEL_REMOTE_HOST
+
+# Then use vncviewer in localhost:5911
 ```
 
 Run this in RHEL
 
 ```
-sudo yum install git
-git clone http://github.com/boonjiashen/remoteEc2
-cd remoteEc2
+sudo yum -y install git && \
+git clone http://github.com/boonjiashen/remoteEc2 && \
+cd remoteEc2 && \
 ./build-remote.sh
 ```
 
