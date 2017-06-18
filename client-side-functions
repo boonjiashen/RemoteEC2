@@ -2,11 +2,11 @@ function echo_run() {
     echo "$@" ; "$@" ;
 }
 
-function rhelTunnel() {
+function tunnel() {
        target=$1
        tunnel_host=$2
-       PEM=$RHEL_PEM
-       USER=$RHEL_REMOTE_USER
+       PEM=$AL_PEM
+       USER=$REMOTE_USER
        # kill pre-existing tunnel
        for pid in `ps -ef | grep $target | grep -v grep |awk '{print $2}'` ; do
                echo_run kill $pid
@@ -15,10 +15,10 @@ function rhelTunnel() {
        echo_run ssh -i $PEM -2 -N -f -L $target $USER@$tunnel_host
 }
 
-function myVncRhelTunnel(){
-       host=$RHEL_REMOTE_HOST
+function myVnctunnel(){
+       host=$1
        for x in 0 1 2 3 4; do
                # forward port 590x to 591x, to avoid conflict with local vnc servers
-               rhelTunnel 592$x:$host:590$x $host
+               tunnel 591$x:$host:590$x $host
        done
 }

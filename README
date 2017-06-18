@@ -1,0 +1,14 @@
+After build, run the following to change password of ubuntu user
+
+```
+sudo –i
+passwd ubuntu
+su ubuntu
+cd
+```
+
+To SSH from mac to RHEL
+
+```
+ssh -i $UBUNTU_PEM $UBUNTU_REMOTE_USER@$UBUNTU_REMOTE_HOST
+```

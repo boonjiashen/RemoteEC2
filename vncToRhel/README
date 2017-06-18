@@ -20,5 +20,5 @@ cd remoteEc2 && \
 To SSH from mac to RHEL
 
 ```
-ssh -i $RHEL_PEM $REMOTE_USER@$RHEL_REMOTE_HOST
+ssh -i $RHEL_PEM $RHEL_REMOTE_USER@$RHEL_REMOTE_HOST
 ```
