@@ -1,0 +1,7 @@
+Folder for script common to all Remote desktop stuff
+
+In your Mac, run
+
+```
+./build-client.sh
+```
