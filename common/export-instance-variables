@@ -1,5 +1,5 @@
 UBUNTU_REMOTE_HOST="ec2-54-218-122-238.us-west-2.compute.amazonaws.com"
-RHEL_REMOTE_HOST="ec2-54-218-122-238.us-west-2.compute.amazonaws.com"
+RHEL_REMOTE_HOST="ec2-34-211-147-140.us-west-2.compute.amazonaws.com"
 AL_REMOTE_HOST="ec2-34-211-149-84.us-west-2.compute.amazonaws.com"
 
 AL_PEM="/Users/jiashenb/Downloads/jiashenbMicroRhel.pem"
