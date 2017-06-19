@@ -1,7 +1,6 @@
 #!/bin/bash
 
 sudo apt-get update -y
-sudo apt-get upgrade -y
 sudo apt-get install -y xrdp xfce4
 
 # Configure xrdp to use xfce as your desktop environment
