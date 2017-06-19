@@ -5,3 +5,19 @@ In your Mac, run
 ```
 ./build-client.sh
 ```
+
+Run this in RHEL
+
+```
+sudo yum -y install git && \
+git clone http://github.com/boonjiashen/remoteEc2 && \
+cd remoteEc2
+```
+
+SSH commands
+
+```
+ssh -i $RHEL_PEM $RHEL_REMOTE_USER@$RHEL_REMOTE_HOST
+ssh -i $AL_PEM $AL_REMOTE_USER@$AL_REMOTE_HOST
+ssh -i $UBUNTU_PEM $UBUNTU_REMOTE_USER@$UBUNTU_REMOTE_HOST
+```

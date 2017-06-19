@@ -1,6 +1,6 @@
 UBUNTU_REMOTE_HOST="ec2-54-218-122-238.us-west-2.compute.amazonaws.com"
-RHEL_REMOTE_HOST="ec2-34-211-147-140.us-west-2.compute.amazonaws.com"
-AL_REMOTE_HOST="ec2-34-211-149-84.us-west-2.compute.amazonaws.com"
+RHEL_REMOTE_HOST="ec2-54-212-235-45.us-west-2.compute.amazonaws.com"
+AL_REMOTE_HOST="ec2-54-218-125-36.us-west-2.compute.amazonaws.com"
 
 AL_PEM="/Users/jiashenb/Downloads/jiashenbMicroRhel.pem"
 RHEL_PEM=$AL_PEM
@@ -8,3 +8,4 @@ UBUNTU_PEM=$AL_PEM
 
 UBUNTU_REMOTE_USER="ubuntu"
 RHEL_REMOTE_USER="ec2-user"
+AL_REMOTE_USER="ec2-user"
