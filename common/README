@@ -14,6 +14,10 @@ git clone http://github.com/boonjiashen/remoteEc2 && \
 cd remoteEc2
 ```
 
+To run RDP, you just need the hostname "xxx.aws.com", username (typically
+ubuntu or ec2-user) and the password that you had set for that user. If the
+password hasn't been set, you can set it with `sudo passwd <ubuntu|ec2-user>`
+
 SSH commands
 
 ```
