@@ -1,0 +1,5 @@
+#!/bin/bash
+ 
+mkdir -p --verbose ~/bin
+GIT_ROOT=$( git rev-parse --show-toplevel )
+ln -sf --verbose $GIT_ROOT/optional/* ~/bin/
